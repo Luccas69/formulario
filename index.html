@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <div class="nome">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="sexo" checked>
+            <label for="feminino">Feminino</label>  
+        </div>
+        <div>
+            <label for="curso">Curso: </label>
+            <select id="curso">
+                <option value="html_e_css">HTML e CSS</option>
+                <option value="javascript">Javascript</option>
+                <option value="Git">Git</option>
+                <option value="banco_de_dados">Banco de Dados</option>
+            </select>
+        </div>
+        <div>
+            <label for="atendimento">Atendimento especial:</label>
+            <br>
+            <textarea id="atendimento"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="termos">
+            <label for="termos">Estou de acordo com o termos de serviço</label>
+        </div>
+        <div>
+            <input type="submit" value="Adicionar">
+        </div>
+    </form>
+
+    <button id="mensagem">Mensagem</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

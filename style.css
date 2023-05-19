@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+:root{
+    --cor-pri: #274156;
+    --cor-sec: #1C6E8C;
+    --cor-ter: #605856;
+    --cor-qua: #FBFCFF;
+    --cor-qui: #D0CCD0;
+}
+.nome {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cor-ter);
+}
