@@ -31,15 +31,3 @@ formulario.addEventListener("submit", e => {
     //Redirecionando o foco
     nome.focus();
 });
-
-/*botão de mensagem
-const mensagem = document.querySelector("#mensagem");
-
-mensagem.addEventListener("mouseover", e => {
-    console.log("Passou o mouse no botão")
-});
-
-mensagem.addEventListener("click", e =>{
-    alert("Clicou no botão!")
-});
-*/
