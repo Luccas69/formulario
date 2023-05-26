@@ -1,9 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: var(--cor-ter);
 }
-:root{
+
+:root {
     --cor-pri: #274156;
     --cor-sec: #1C6E8C;
     --cor-ter: #605856;
@@ -11,7 +14,71 @@
     --cor-qui: #D0CCD0;
 }
 .nome {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--cor-ter);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .nome label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .nome input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-pri);
+    border-radius: 4px;
+  }
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
+.cabeçalho {
+    background-color: var(--cor-sec);
+    padding: 20px;
+    color: var(--cor-qua);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .email label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .email input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-pri);
+    border-radius: 4px;
+  }
+.curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .curso label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .curso select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-pri);
+    border-radius: 4px;
+  }
