@@ -81,4 +81,20 @@
     padding: 10px;
     border: 1px solid var(--cor-pri);
     border-radius: 4px;
+    background-color: var(--cor-qua);
+  }
+
+.inscricao {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  margin: 50px;
+}
+  .inscricao input {
+    width: 40vh;
+    height: 4vh;
+    color: var(--cor-qua);
+    border: 0px;
+    background-color: var(--cor-pri);
+
   }
