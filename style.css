@@ -13,88 +13,86 @@
     --cor-qua: #FBFCFF;
     --cor-qui: #D0CCD0;
 }
-.nome {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-  
-  .nome label {
-    text-align: left;
-    margin-bottom: 5px;
-  }
-  
-  .nome input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--cor-pri);
-    border-radius: 4px;
-  }
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-.cabeçalho {
-    background-color: var(--cor-sec);
-    padding: 20px;
-    color: var(--cor-qua);
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-.email {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-  
-  .email label {
-    text-align: left;
-    margin-bottom: 5px;
-  }
-  
-  .email input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--cor-pri);
-    border-radius: 4px;
-  }
-.curso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .curso label {
-    text-align: left;
-    margin-bottom: 5px;
-  }
-  
-  .curso select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--cor-pri);
-    border-radius: 4px;
-    background-color: var(--cor-qua);
-  }
-
-.inscricao {
+body {
   display: flex;
-  flex-direction: center;
+  justify-content: center;
   align-items: center;
-  margin: 50px;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f2f2f2;
 }
-  .inscricao input {
-    width: 40vh;
-    height: 4vh;
-    color: var(--cor-qua);
-    border: 0px;
-    background-color: var(--cor-pri);
+.cabecalho {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  }
+.formulario {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nome,
+.email,
+.sexo,
+.curso,
+.atendimento,
+.termos,
+.inscricao {
+  margin-bottom: 15px;
+}
+
+.nome label,
+.email label,
+.sexo label,
+.curso label,
+.atendimento label,
+.termos label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.nome input,
+.email input,
+.atendimento textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.sexo label,
+.curso label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.atendimento textarea {
+  height: 80px;
+}
+
+.termos label {
+  display: inline;
+  font-weight: normal;
+}
+
+.inscricao input[type="submit"] {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--cor-pri);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.inscricao input[type="submit"]:hover {
+  background-color: #45a049;
+}
